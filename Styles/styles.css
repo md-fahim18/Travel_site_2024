@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.text-color {
+  color: rgba(19, 19, 24, 0.7);
+}
+body {
+  background: #f5fffa;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.title-logo {
+  display: flex;
+}
+.logo {
+  margin-right: 1.5rem;
+}
+.dropdown-menu li {
+  list-style: none;
+  display: flex;
+  margin-right: 35px;
+}
+.dropdown-menu ul {
+  display: flex;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* banner styles */
+.banner-container {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background: url(../Images/banner.png) center/cover no-repeat;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.banner-container::after {
+  content: ""; /* Required for the pseudo-element */
+  position: absolute; /* Position it absolutely within the container */
+  top: 0; /* Start from the top */
+  left: 0; /* Start from the left */
+  right: 0; /* Stretch to the right */
+  bottom: 0; /* Stretch to the bottom */
+  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
+  z-index: 1; /* Make sure it sits above the background image */
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; /* Position content above the overlay */
+  color: white; /* Text color for visibility */
+  z-index: 2; /* Ensure content is above the overlay */
+}
+.search-box {
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+}
+.banner-title {
+  font-size: 3rem;
+  margin-top: 30px;
+  font-weight: 700;
+}
+.banner-description {
+  font-size: 0.8rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 0.2rem;
+}
+.btn-primary {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+}
+/* tour styles */
+.tour-container {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  gap: 50px;
+}
+.tour-title {
+  font-weight: 800;
+  line-height: 50px;
+}
+/* destination section styles */
+.destination-text {
+  text-align: center;
+}
+.row-container-img {
+  position: relative;
+  display: inline-block;
+}
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-weight: bold;
+}
+.first-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.second-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.third-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+/* .content-3 {
+  width: 30%;
+}
+.content-4 {
+  width: 40%;
+}
+.content-5 {
+  width: 25%;
+} */
+
+/* choose us styles */
+.choose-us-text {
+  text-align: center;
+}
+.card img {
+  width: 50px; /* Set width to the desired icon size */
+  height: 50px; /* Set height to the desired icon size */
+  object-fit: cover; /* Ensures the image fills the container and maintains aspect ratio */
+  border-radius: 4px; /* Optional: for a rounded or square icon look */
+}
+
+.card {
+  width: 300px; /* Adjust based on your design */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 25px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+/* discount styles  */
+.discount-container {
+  text-align: center;
+  margin-top: 50px;
+}
+.deal-1,
+.deal-2,
+.deal-3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.bg-img {
+  width: 100vh;
+}
+.deal-card {
+  position: absolute;
+  width: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75); /* 30% opacity white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-family: Arial, sans-serif;
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect behind the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  text-align: left;
+}
+
+.deal-2 .deal-card {
+  transform: translate(-80%, -50%);
+}
+
+.deal-card img {
+  width: 25px;
+  height: 25px;
+}
+.header {
+  display: flex;
+}
+.price {
+  color: rgb(255, 84, 0);
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
