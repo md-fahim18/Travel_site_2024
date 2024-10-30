@@ -199,9 +199,6 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
-.bg-img {
-  width: 100vh;
-}
 .deal-card {
   position: absolute;
   width: fit-content;
